@@ -1,0 +1,299 @@
+/*===============
+  SEARCH BAR
+=================*/
+#header #search_widget i {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.8rem;
+  color: var(--main);
+}
+@media screen and (max-width: 1199px) {
+  #header #search_widget i {
+    bottom: 1.2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  #header #search_widget i {
+    right: 0.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  #header #search_widget i {
+    bottom: -0.8rem;
+  }
+}
+
+/*==================
+  MODAL CONTAINER
+====================*/
+#searchmodal .modal-dialog {
+  max-width: 100%;
+  pointer-events: all;
+  margin: 0 !important;
+}
+#searchmodal.modal {
+  width: 95%;
+  margin: 0px auto;
+  background-color: white !important;
+  height: fit-content;
+  padding-bottom: 5px;
+  max-height: 95vh;
+  overflow-y: overlay !important;
+}
+
+@media screen and (max-width: 960px) {
+  #searchmodal.modal {
+    width: 100%;
+  }
+}
+#searchmodal .container {
+  max-width: 1300px;
+  width: 100%;
+}
+
+/*============
+  HEADER
+==============*/
+#searchmodal header.CotracSearchHeader {
+  display: flex;
+  width: 100%;
+  padding: 25px 0px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+#searchmodal header.CotracSearchHeader h1 span.CotracSearchTitleHidden {
+  width: 0px;
+  height: 0px;
+  font-size: 0px;
+}
+#searchmodal header.CotracSearchHeader .CotracSearchHeaderWrapper {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#searchmodal header.CotracSearchHeader .CotracSearchInput {
+  display: flex;
+  align-items: baseline;
+}
+#searchmodal header.CotracSearchHeader label {
+  margin: 0px 15px 0px 0px;
+}
+#searchmodal header.CotracSearchHeader input {
+  height: 40px;
+  width: 350px;
+  border: 1px solid #0066cc;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+#searchmodal header.CotracSearchHeader .reassurance {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#searchmodal header.CotracSearchHeader .reassurance div {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 15px;
+}
+#searchmodal header.CotracSearchHeader .reassurance div.CotracSearchServiceClient{
+  margin-left: 10px;
+}
+#searchmodal header.CotracSearchHeader .reassurance div img {
+  max-width: 64px;
+}
+#searchmodal header.CotracSearchHeader .reassurance p {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  color: var(--main);
+  text-transform: uppercase;
+  margin: 0;
+}
+#searchmodal header.CotracSearchHeader .reassurance p span {
+  color: var(--secondary);
+}
+#searchmodal header.CotracSearchHeader input:focus-visible {
+  outline: none;
+  background-color: #f5f5f5;
+  border: 2px solid #ffc000;
+}
+
+#searchmodal header.CotracSearchHeader h1 img.LogoCotracSearchHeader {
+  width: 100%;
+  max-width: 350px;
+  margin-left: -15px;
+}
+#searchmodal header.CotracSearchHeader .closeButton {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}
+#searchmodal header.CotracSearchHeader .closeButton .close {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 991px) {
+  #searchmodal header.CotracSearchHeader input {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #searchmodal h1 {
+    text-align-last: center;
+  }
+  #searchmodal header.CotracSearchHeader {
+    justify-content: center;
+  }
+  #searchmodal header.CotracSearchHeader label{
+    display: none;
+  }
+}
+
+.checkcategory{
+margin-right: 5px;
+}
+/*============
+  FOOTER
+==============*/
+#searchmodal footer.CotracSearchFooter {
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+}
+#searchmodal footer.CotracSearchFooter .offset-lg-2 {
+  text-align: center;
+}
+#searchmodal footer.CotracSearchFooter img {
+  max-width: 80%;
+  /*max-height: 180px;*/
+  object-fit: contain;
+}
+@media screen and (max-width: 991px) {
+  #searchmodal footer.CotracSearchFooter img {
+    max-width: 100%;
+  }
+}
+
+/*===============
+  LEFT COLUMN
+=================*/
+#searchmodal .CotracSearch-filter-price {
+  display: flex;
+  justify-content: space-between;
+}
+#searchmodal .filter-price label {
+  font-size: 20px;
+}
+#searchmodal .CotracSearch-filter-price input {
+  border-radius: 5px;
+  border: 2px solid #777;
+  width: 35%;
+  height: 40px;
+  text-align: center;
+  padding: 4px;
+}
+#searchmodal .CotracSearch-filter-price input:focus-visible {
+  outline: none;
+  background-color: #f5f5f5;
+  border-color: #ffc000;
+}
+#searchmodal .range-separator {
+  width: 15%;
+  position: relative;
+}
+#searchmodal .range-separator::after {
+  content: "";
+  border: 1px solid #777;
+  width: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-8px);
+}
+.left-column fieldset {
+  margin-top: 20px;
+}
+#searchmodal legend,
+#searchmodal label {
+  color: #444;
+}
+#searchmodal .CotracSearch-filter-price label {
+  align-self: center;
+  margin: 0;
+}
+
+#searchmodal .checkcategory-container{
+	display: flex;
+	margin-top:10px
+}
+#searchmodal .checkcategory-container label {
+	display: inline-block;
+	text-align: left;
+}
+
+#searchmodal .checkcategory-container input.checkcategory{
+	margin-bottom: auto;
+}
+/*====================
+  WRAPPER CONTAINER
+======================*/
+#searchmodal #CotracSearchKeywords {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#searchmodal #CotracSearchKeywords span.CotracSearchKeyword {
+  display: block;
+  background-color: #eee;
+  color: #444;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 25px;
+}
+#searchmodal #CotracSearchKeywords span.CotracSearchKeyword:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+#searchmodal .card-cotrac {
+  padding: 5px;
+}
+
+#searchmodal .wrapper-product {
+  max-height: 54vh;
+  overflow: scroll;
+  /*margin-bottom: 20px;*/
+}
+
+#searchmodal .card img {
+  width: 100%;
+}
+#searchmodal .card,
+#searchmodal .card .card-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#searchmodal .card {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#searchmodal .card h5.card-title {
+  height: 52.8px;
+  overflow: hidden;
+}
+
+#searchmodal #SearchKeywordResults {
+  display: flex;
+}
+#searchmodal .CotracSearchNoResult {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
